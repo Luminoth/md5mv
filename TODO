@@ -1,0 +1,22 @@
+http://http.developer.nvidia.com/GPUGems/gpugems_ch09.html
+
+
+
+http://tfc.duke.free.fr/coding/md5-specs-en.html
+Read up: http://www.modwiki.net/wiki/Doom_3
+http://fabiensanglard.net/bumpMapping/index.php
+*.mtr files are the materials (shaders)
+
+Need a material manager
+Need a shader manager
+
+Error opengl methods
+
+
+
+
+Need to not call these methods every frame:
+
+glGetAttribLocation
+glGetUniformLocation
+glGetError

@@ -1,0 +1,49 @@
+//map "test_box"
+map "test_lotsaimps"
+//map "delta1"
+
+global_ambient_color 0.1 0.1 0.1 1.0
+
+// path name num_animations <list of animations>
+models {
+    //"monsters/cyberdemon" "cyberdemon" 1 "idle"
+    //"monsters/hellknight" "hellknight" 1 "idle2"
+    //"monsters/imp" "imp" 3 "idle1" "sight" "walk1"
+    "monsters/pinky" "pinky" 1 "idle1"
+    //"characters/male_npc/marine" "marine" 2 "drink_idle" "PDA_idle"
+    //"monsters/lostsoul" "lostsoul" 1 "walk1"
+    //"simple/box" "box" 0
+    "simple/box" "box2" 0
+}
+
+// type model name <position> <animation, if non-static> <start frame, if non-static>
+renderables {
+    //"monster" "hellknight" "hellknight" -100.0 0.0 250.0 "idle2" 0
+    //"monster" "cyberdemon" "cyberdemon" -100.0 0.0 0.0 "idle" 0
+    //"monster" "imp" "idle_imp" 100.0 0.0 0.0 "idle1" 0
+    //"monster" "imp" "sight_imp" 100.0 0.0 -110.0 "sight" 0
+    //"monster" "imp" "walk_imp" 100.0 0.0 110.0 "walk1" 0
+    //"monster" "pinky" "idle_pinky1" 200.0 0.0 0.0 "idle1" 0
+    //"character" "marine" "marine" 300.0 0.0 0.0 "PDA_idle" 0
+    "monster" "pinky" "idle_pinky2" 300.0 0.0 -100.0 "idle1" 40
+    //"monster" "lostsoul" "lostsoul" 200.0 50.0 100.0 "walk1" 0
+    //"static" "box" "box" 100.0 25.0 0.0
+    "static" "box2" "box" 100.0 25.0 0.0
+}
+
+// type <position/direction> color <type-specific values>
+lights  {
+    "positional" 100.0 100.0 0.0 "red" 0.0 .005 0.0
+    //"positional" 100.0 100.0 0.0 "white" 0.0 .005 0.0
+    //"positional" 100.0 100.0 0.0 "white" 1.0 0.0 0.0
+    //"positional" 100.0 100.0 100.0 "green" 0.0 0.0 0.0001
+    "directional" 1.0 0.0 0.0 "white"
+    //"directional" 0.0 1.0 0.0 "red"
+    //"directional" 0.0 0.0 1.0 "red"
+    //"directional" 0.0 0.0 1.0 "green"
+    //"directional" 0.0 0.0 -1.0 "blue"
+    //"spot" 500.0 0.0 0.0 "white" -1.0 0.0 0.0 45.0 90.0 1.0 0.0 0.0
+    //"spot" 200.0 0.0 0.0 "white" -1.0 0.0 0.0 45.0 90.0 0.0 0.005 0.0
+    //"spot" 500.0 0.0 0.0 "white" -1.0 0.0 0.0 45.0 128.0 0.0 0.005 0.0
+    //"spot" 500.0 0.0 0.0 "green" -1.0 0.0 0.0 45.0 128.0 0.0 0.005 0.0
+}

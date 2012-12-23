@@ -1,0 +1,5 @@
+ambient 0.3 0.3 0.3 1.0
+diffuse 0.8 0.8 0.8 1.0
+specular 1.0 1.0 1.0 1.0
+emissive 0.1 0.1 0.1 1.0
+shininess 32.0

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\renderer">
+      <UniqueIdentifier>{35cd6dab-6abf-4fcb-bd71-31d1c60fe80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{5b8d0874-89ad-4133-ad06-b36ea01f4e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\math">
+      <UniqueIdentifier>{a268a554-b5c3-48d5-9d0e-12d4f4cae0f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\physics">
+      <UniqueIdentifier>{e79d17ce-3826-4752-abe9-6458a9be512c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{47912361-8945-4d41-9afd-c65e49fb9232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\world">
+      <UniqueIdentifier>{94248e46-8c2a-4db8-9679-f3638c69f7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sound">
+      <UniqueIdentifier>{1b8cbaf4-ecf2-4f40-ab1d-1361041c0fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
+      <UniqueIdentifier>{4e4446b1-a1ab-444b-a73f-834d968555b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{fc8a03c8-1057-4078-842c-c92adadb2cc2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Material.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MD5Animation.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MD5Model.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModelManager.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lexer.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physical.cc">
+      <Filter>Source Files\util\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureManager.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Matrix3.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Matrix4.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Quaternion.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cc">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sound.cc">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sphere.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Font.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputState.cc">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UIController.cc">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameUIController.cc">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Q3BSP.cc">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\D3Map.cc">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Animation.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logger.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Geometry.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\string_util.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Configuration.cc">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Actor.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Character.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ClientConfiguration.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Monster.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\State.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Static.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AABB.cc">
+      <Filter>Source Files\util\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector.cc">
+      <Filter>Source Files\util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Nameplate.cc">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Targa.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PNG.cc">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MD5Model.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MD5Animation.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModelManager.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fs_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lexer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physical.h">
+      <Filter>Source Files\util\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureManager.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quaternion.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matrix3.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matrix4.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math_util.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sound.h">
+      <Filter>Source Files\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sphere.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Font.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UIController.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputSym.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputState.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameUIController.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Q3BSP.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\D3Map.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Animation.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Logger.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plane.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Geometry.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gl_defs.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\string_util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Configuration.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actor.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Character.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ClientConfiguration.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Monster.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\State.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Static.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AABB.h">
+      <Filter>Source Files\util\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoundingVolume.h">
+      <Filter>Source Files\util\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector.h">
+      <Filter>Source Files\util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nameplate.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Targa.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PNG.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="share\shaders\simple.geom">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple-texture.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="TODO" />
+    <None Include="share\shaders\no-geom.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple-gray.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple-blue.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple-green.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\simple-red.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\text.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\text.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\ambient.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\deferred.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\bump.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\bump.geom">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\vertex.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\vertex.geom">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\deferred.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\shadow.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\pick.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\shadow-infinite.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="share\shaders\shadow-point.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

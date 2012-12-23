@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{605BCA99-44CC-45B8-990D-7B929DE2743A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>md5mv</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\lpng1513;C:\boost_1_52_0\;C:\openal-soft-1.15-bin\include;C:\openal-soft-1.15-bin\include\AL;C:\freealut-1.1.0-bin\include;C:\glew-1.9.0\include;C:\SDL-1.2.15\include;C:\freetype-2.3.5-1-bin\include;C:\freetype-2.3.5-1-bin\include\freetype2;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL-1.2.15\lib\x86;C:\openal-soft-1.15-bin\lib\Win32;C:\freealut-1.1.0-bin\lib;C:\boost_1_52_0\stage\lib;C:\lpng1513\projects\vstudio\Release;C:\glew-1.9.0\lib;C:\freetype-2.3.5-1-bin\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\lpng1513;C:\boost_1_52_0\;C:\openal-soft-1.15-bin\include;C:\openal-soft-1.15-bin\include\AL;C:\freealut-1.1.0-bin\include;C:\glew-1.9.0\include;C:\SDL-1.2.15\include;C:\freetype-2.3.5-1-bin\include;C:\freetype-2.3.5-1-bin\include\freetype2;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL-1.2.15\lib\x86;C:\openal-soft-1.15-bin\lib\Win32;C:\freealut-1.1.0-bin\lib;C:\boost_1_52_0\stage\lib;C:\lpng1513\projects\vstudio\Release;C:\glew-1.9.0\lib;C:\freetype-2.3.5-1-bin\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;USE_SSE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libboost_system-vc110-mt-gd-1_52.lib;libboost_filesystem-vc110-mt-gd-1_52.lib;libboost_thread-vc110-mt-gd-1_52.lib;libboost_date_time-vc110-mt-gd-1_52.lib;userenv.lib;opengl32.lib;glew32.lib;glu32.lib;alut.lib;SDL.lib;SDLmain.lib;freetype.lib;libpng15.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;USE_SSE;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libboost_system-vc110-mt-1_52.lib;libboost_filesystem-vc110-mt-1_52.lib;libboost_thread-vc110-mt-1_52.lib;libboost_date_time-vc110-mt-1_52.lib;userenv.lib;opengl32.lib;glew32.lib;glu32.lib;alut.lib;SDL.lib;SDLmain.lib;freetype.lib;libpng15.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AABB.cc" />
+    <ClCompile Include="src\Actor.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Animation.cc" />
+    <ClCompile Include="src\Camera.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Character.cc" />
+    <ClCompile Include="src\ClientConfiguration.cc" />
+    <ClCompile Include="src\common.cc" />
+    <ClCompile Include="src\Configuration.cc" />
+    <ClCompile Include="src\D3Map.cc" />
+    <ClCompile Include="src\Engine.cc" />
+    <ClCompile Include="src\Font.cc" />
+    <ClCompile Include="src\fs_util.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\GameUIController.cc" />
+    <ClCompile Include="src\Geometry.cc" />
+    <ClCompile Include="src\InputState.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Lexer.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Light.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Logger.cc" />
+    <ClCompile Include="src\main.cc" />
+    <ClCompile Include="src\Map.cc" />
+    <ClCompile Include="src\Material.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Matrix3.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Matrix4.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\MD5Animation.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\MD5Model.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cc" />
+    <ClCompile Include="src\Model.cc" />
+    <ClCompile Include="src\ModelManager.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Monster.cc" />
+    <ClCompile Include="src\Nameplate.cc" />
+    <ClCompile Include="src\pch.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Physical.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cc" />
+    <ClCompile Include="src\Player.cc" />
+    <ClCompile Include="src\PNG.cc" />
+    <ClCompile Include="src\Q3BSP.cc" />
+    <ClCompile Include="src\Quaternion.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Renderable.cc" />
+    <ClCompile Include="src\Renderer.cc" />
+    <ClCompile Include="src\Scene.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Sound.cc" />
+    <ClCompile Include="src\Sphere.cc" />
+    <ClCompile Include="src\State.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Static.cc" />
+    <ClCompile Include="src\string_util.cc" />
+    <ClCompile Include="src\Targa.cc" />
+    <ClCompile Include="src\Texture.cc" />
+    <ClCompile Include="src\TextureManager.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\UIController.cc" />
+    <ClCompile Include="src\util.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Vector.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AABB.h" />
+    <ClInclude Include="src\Actor.h" />
+    <ClInclude Include="src\Animation.h" />
+    <ClInclude Include="src\BoundingVolume.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\ClientConfiguration.h" />
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\Configuration.h" />
+    <ClInclude Include="src\D3Map.h" />
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\Font.h" />
+    <ClInclude Include="src\fs_util.h" />
+    <ClInclude Include="src\GameUIController.h" />
+    <ClInclude Include="src\Geometry.h" />
+    <ClInclude Include="src\gl_defs.h" />
+    <ClInclude Include="src\InputState.h" />
+    <ClInclude Include="src\InputSym.h" />
+    <ClInclude Include="src\Lexer.h" />
+    <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\Logger.h" />
+    <ClInclude Include="src\Map.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\math_util.h" />
+    <ClInclude Include="src\Matrix3.h" />
+    <ClInclude Include="src\Matrix4.h" />
+    <ClInclude Include="src\MD5Animation.h" />
+    <ClInclude Include="src\MD5Model.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\Model.h" />
+    <ClInclude Include="src\ModelManager.h" />
+    <ClInclude Include="src\Monster.h" />
+    <ClInclude Include="src\Nameplate.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Physical.h" />
+    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\PNG.h" />
+    <ClInclude Include="src\Q3BSP.h" />
+    <ClInclude Include="src\Quaternion.h" />
+    <ClInclude Include="src\Renderable.h" />
+    <ClInclude Include="src\Renderer.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\Sound.h" />
+    <ClInclude Include="src\Sphere.h" />
+    <ClInclude Include="src\State.h" />
+    <ClInclude Include="src\Static.h" />
+    <ClInclude Include="src\string_util.h" />
+    <ClInclude Include="src\Targa.h" />
+    <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\TextureManager.h" />
+    <ClInclude Include="src\UIController.h" />
+    <ClInclude Include="src\util.h" />
+    <ClInclude Include="src\Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="share\shaders\ambient.frag" />
+    <None Include="share\shaders\bump.frag" />
+    <None Include="share\shaders\bump.geom" />
+    <None Include="share\shaders\deferred.frag" />
+    <None Include="share\shaders\deferred.vert" />
+    <None Include="share\shaders\no-geom.vert" />
+    <None Include="share\shaders\pick.frag" />
+    <None Include="share\shaders\shadow-infinite.vert" />
+    <None Include="share\shaders\shadow-point.vert" />
+    <None Include="share\shaders\shadow.frag" />
+    <None Include="share\shaders\simple-blue.frag" />
+    <None Include="share\shaders\simple-gray.frag" />
+    <None Include="share\shaders\simple-green.frag" />
+    <None Include="share\shaders\simple-red.frag" />
+    <None Include="share\shaders\simple-texture.frag" />
+    <None Include="share\shaders\simple.geom" />
+    <None Include="share\shaders\simple.vert" />
+    <None Include="share\shaders\text.frag" />
+    <None Include="share\shaders\text.vert" />
+    <None Include="share\shaders\vertex.frag" />
+    <None Include="share\shaders\vertex.geom" />
+    <None Include="TODO" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
