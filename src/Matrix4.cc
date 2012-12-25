@@ -43,6 +43,7 @@ Matrix4 Matrix4::frustum(float left, float right, float bottom, float top, float
     frustum[10] = -((f + n) / (f - n));
     frustum[11] = -((2.0f * f * n) / (f - n));
     frustum[14] = -1.0f;
+    frustum[15] = 0.0f;
     return frustum;
 }
 
@@ -56,6 +57,7 @@ Matrix4 Matrix4::infinite_frustum(float left, float right, float bottom, float t
     frustum[10] = -1;
     frustum[11] = -2.0f * n;
     frustum[14] = -1.0f;
+    frustum[15] = 0.0f;
     return frustum;
 }
 
