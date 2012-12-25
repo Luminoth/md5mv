@@ -13,6 +13,7 @@ Matrix4 Matrix4::perspective(float fov, float aspect, float n, float f)
     perspective[10] = (f + n) / (n - f);
     perspective[11] = (2.0f * f * n) / (n - f);
     perspective[14] = -1.0f;
+    perspective[15] = 0.0f;
     return perspective;
 }
 
